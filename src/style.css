@@ -1,0 +1,138 @@
+.hello {
+  color: red;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  user-select: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: #f7f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  color: #696969;
+}
+
+.main {
+  background-color: white;
+  border-radius: 5px;
+  width: 300px;
+  box-shadow: 2px 2px 2px 2px rgb(236, 236, 236);
+}
+
+.heading,
+.list {
+  border-bottom: 1px solid #d1d0d1;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+}
+
+.trash {
+  display: none;
+}
+
+#edit,
+#delete {
+  background-color: transparent;
+  border: none;
+}
+
+.add {
+  border-bottom: 1px solid #d1d0d1;
+  padding: 20px;
+}
+
+.list input {
+  margin-right: 10px;
+}
+
+.add form input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+#editForm input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background-color: transparent;
+}
+
+#addForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.complete {
+  border-radius: 0 0 5px 5px;
+  padding: 20px;
+  text-align: center;
+  background-color: #dcdadc;
+  color: rgb(153, 153, 153);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.list {
+  cursor: pointer;
+}
+
+.rotate:hover {
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
+
+.complete:hover {
+  background-color: #aaa;
+  color: rgb(255, 255, 255);
+}
+
+.complete h4 {
+  font-weight: 600;
+}
+
+.list .item {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.heading h3 {
+  font-size: 17px;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.add svg {
+  transform: rotate(270deg);
+}
+
+.select {
+  text-decoration: line-through;
+  color: gray;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    width: 500px;
+  }
+}
